@@ -21,3 +21,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/.idea/dataSources.xml
+/create.sql
+/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+/.idea/jarRepositories.xml
+/.mvn/wrapper/maven-wrapper.properties
+/.idea/misc.xml
+/.idea/sqldialects.xml
+/.idea/uiDesigner.xml
+/.idea/vcs.xml
+/.idea/encodings.xml
+/target/Dar-Server-0.0.1-SNAPSHOT.jar.original
+/.idea/compiler.xml
+/.idea/.gitignore
+/target/maven-archiver/pom.properties
