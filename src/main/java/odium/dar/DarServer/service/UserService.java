@@ -1,6 +1,6 @@
 package odium.dar.DarServer.service;
 
-import odium.dar.DarServer.models.User;
+import odium.dar.DarServer.model.User;
 
 import java.util.List;
 
