@@ -1,13 +1,23 @@
 package odium.dar.DarServer.game.model;
 
-import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.jgrapht.Graph;
+import org.jgrapht.graph.SimpleGraph;
 
 import java.util.Map;
 
 @Data
-@Builder(toBuilder = true)
+@NoArgsConstructor
 public class Board {
-    private Map<Integer, Tile> map;
+    @Override
+    public String toString() {
+        return "Board{" +
+                "graph=" + graph +
+                '}';
+    }
 
+    //    private Map<Integer, Tile> map;
+//    Graph<Vertex, Road> g;
+    Graph<Vertex, Road> graph = new SimpleGraph<>(Road.class);
 }
