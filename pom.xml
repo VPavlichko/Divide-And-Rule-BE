@@ -15,7 +15,7 @@
 	<description>Server for Divide and Rule</description>
 	<properties>
 		<property name="hibernate.hbm2ddl.auto">create</property>
-		<java.version>18</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

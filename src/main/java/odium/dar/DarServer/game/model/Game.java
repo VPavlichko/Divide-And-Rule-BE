@@ -10,9 +10,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 @Data
-@Component
+//@Component
 @AllArgsConstructor
 public class Game {
-    private List<Player> players = new LinkedList<>();
+    private List<Player> players;
     private Board gameBoard;
 }
