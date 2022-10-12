@@ -15,7 +15,6 @@
 	<description>Server for Divide and Rule</description>
 	<properties>
 		<property name="hibernate.hbm2ddl.auto">create</property>
-		<java.version>18</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -83,6 +82,14 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>${project.parent.version}</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>16</source>
+					<target>16</target>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

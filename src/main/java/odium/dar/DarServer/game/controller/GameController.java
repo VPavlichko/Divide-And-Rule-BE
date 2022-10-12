@@ -4,7 +4,7 @@ import lombok.Data;
 import odium.dar.DarServer.game.model.Board;
 import org.springframework.stereotype.Component;
 
-@Data
+//@Data
 //@Component
 public class GameController {
     private Board board;
