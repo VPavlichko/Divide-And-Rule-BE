@@ -3,6 +3,7 @@ package odium.dar.DarServer.game.model;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class GameFacade {
 
@@ -30,6 +31,6 @@ public class GameFacade {
        List<Integer> list= board.getGraph().vertexSet().stream().flatMap(root -> root.getTiles()
                 .stream()
                 .filter(nested -> nested.getQuantity() == diceRoll)
-                .map(filteredElement -> root.getPlayerId())).toList();
+                .map(filteredElement -> root.getPlayerId())).collect(Collectors.toList());
     }
 }
