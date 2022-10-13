@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "odium.dar.DarServer.security.AppConfig",
+      "sourceType": "odium.dar.DarServer.security.AppConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.url",
+      "type": "java.lang.String",
+      "sourceType": "odium.dar.DarServer.security.AppConfig"
+    }
+  ],
+  "hints": []
+}

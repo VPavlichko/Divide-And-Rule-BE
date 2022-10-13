@@ -45,23 +45,11 @@ public class RunGame {
         System.out.println(board.toString());
         gameFacade.onDiceRoll();
 
-        @Data
-        @AllArgsConstructor
-        class RootElement {
-            private String name;
-            private List<String> nestedElements;
-
-            //getters / setters and constructors
-        }
-        List<RootElement> elements = Arrays.asList(
-                new RootElement("first", Arrays.asList("one", "two", "three")),
-                new RootElement("second", Arrays.asList("four", "one", "two")));
-        String filterParam = "four";
-        List<RootElement> filtered = elements.stream()
-                .flatMap(root -> root.getNestedElements()
+        List<Player> filtered = playerList.stream()
+                .flatMap(player -> player.getCards()
                         .stream()
-                        .filter(nested -> nested.equalsIgnoreCase(filterParam))
-                        .map(filteredElement -> new RootElement(root.getName(), root.getNestedElements()))).toList();
+                        .filter(card -> card.getType().equals(ECardType.BRICK))
+                        .map(filteredElement -> player)).toList();
         filtered.forEach(System.out::println);
 
 
